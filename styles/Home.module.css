@@ -1,0 +1,28 @@
+.workLink {
+  display: block;
+  text-decoration: none;
+  border-radius: 0;
+  line-height: 1.2;
+  border-bottom: none;
+  transition: 0.01s background-color ease-out;
+  cursor: pointer;
+}
+
+.workLink:first-of-type {
+  position: relative;
+  left: 0;
+}
+
+.workLink:hover {
+  color: var(--primary-text);
+}
+
+@media (min-width: 600px) {
+  .workLink:hover {
+    background-color: rgba(100, 100, 100, 0.15);
+  }
+
+  .workLink {
+    border-radius: 12px;
+  }
+}

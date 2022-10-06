@@ -1,0 +1,71 @@
+@import "./normalize.css";
+@import "./type.css";
+
+:root {
+  --charcoal: #2c2c2c;
+  --smoke-dark: #85898e;
+  --smoke-shadow: #d8dadc;
+  --smoke: #eceeef;
+  --red: #ff0d0d;
+  --green: #0bac46;
+  --blue: #1996eb;
+  --dark: #000;
+  --gray: #aaaaaa;
+  --white: #ffffff;
+  --surface-background: var(--white);
+  --overlay: rgba(155, 155, 155, 0.5);
+  --surface-highlight: var(--smoke);
+  --primary-text: var(--charcoal);
+  --secondary-text: var(--smoke-dark);
+  --link: var(--blue);
+  --lg: 800px;
+  --small: 600px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-background: var(--charcoal);
+    --surface-highlight: #393939;
+    --primary-text: var(--white);
+    --secondary-text: var(--smoke-shadow);
+    --link: #4bb7ff;
+    --overlay: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@font-face {
+  font-family: "Nitti Grotesk";
+  src: url("/fonts/NittiGrotesk-Bold.woff2") format("woff2"),
+    url("/fonts/NittiGrotesk-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nitti Grotesk";
+  src: url("/fonts/NittiGrotesk-Regular.woff2") format("woff2"),
+    url("/fonts/NittiGrotesk-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Nitti Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  background-color: var(--surface-background);
+  color: var(--primary-text);
+  margin: 0;
+}

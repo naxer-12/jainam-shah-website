@@ -1,0 +1,40 @@
+.link {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--secondary-text);
+  cursor: pointer;
+  opacity: 0.7;
+  border-bottom: 2px solid transparent;
+}
+
+.link:hover {
+  color: var(--secondary-text);
+  opacity: 1;
+}
+
+.active {
+  color: var(--primary-text);
+  cursor: pointer;
+  border-bottom: 2px solid var(--link);
+}
+
+.active:hover {
+  color: var(--primary-text);
+}
+
+.logo {
+  font-size: 2rem;
+  position: relative;
+  left: -7px;
+  padding: 6px;
+  line-height: 1;
+  margin: 0;
+  border-radius: 8px;
+  width: 41px;
+  height: 41px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  background-color: var(--surface-highlight);
+}
