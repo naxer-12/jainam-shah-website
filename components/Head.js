@@ -30,11 +30,11 @@ const Head = function (props) {
         openGraph={{
           title: title,
           description: description,
-          images: [
-            {
-              url: image,
-            },
-          ],
+          // images: [
+          //   {
+          //     url: image,
+          //   },
+          // ],
           site_name: "Jainam Shah",
         }}
         twitter={{

@@ -53,6 +53,13 @@ let nav = [
   //   url: "/writing",
   // },
 ];
+let resume = [
+  {
+    title: "Resume",
+    extUrl:
+      "https://drive.google.com/file/d/1M7cE2roszn2_xIu5xSCGWcMjxKLCEgTq/view?usp=sharing",
+  },
+];
 
 const data = [
   // { name: "Writing", source: posts },
@@ -64,6 +71,10 @@ const data = [
   {
     name: "Projects",
     source: projects,
+  },
+  {
+    name: "Resume",
+    source: resume,
   },
 ];
 

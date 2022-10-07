@@ -4,20 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node lib/db && next build",
+    "build": "next build",
     "start": "next start",
+    "export": "next export",
     "db": "node lib/db"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.19",
-    "@next/mdx": "^10.0.0",
+    "@babel/core": "^7.19.3",
     "@reach/dialog": "^0.11.2",
     "cmdk": "^0.0.4",
     "date-fns": "^2.16.1",
     "downshift": "^6.0.6",
     "gray-matter": "^4.0.2",
     "match-sorter": "^5.0.0",
-    "next": "10.0.0",
+    "next": "^12.3.1",
     "next-compose-plugins": "^2.2.0",
     "next-seo": "^4.14.0",
     "react": "17.0.1",
@@ -28,6 +28,10 @@
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "sharp": "^0.30.4",
-    "tinykeys": "^1.1.1"
+    "tinykeys": "^1.1.1",
+    "webpack-serve": "^4.0.0"
+  },
+  "devDependencies": {
+    "cheerio": "=1.0.0-rc.3"
   }
 }
