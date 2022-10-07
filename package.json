@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "static": "next build && next export && touch ./out/.nojekyll && echo 'https://naxer-12.github.io/' > ./out/CNAME",
-    "deploy": "gh-pages -d out -t true",
+    
     "export": "next export",
     "db": "node lib/db"
   },
