@@ -5,11 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "static": "next build && next export && touch ./out/.nojekyll && echo 'https://naxer-12.github.io/' > ./out/CNAME",
-    
-    "export": "next export",
-    "db": "node lib/db"
+    "start": "next start",    
+    "export": "next export && touch out/.nojekyll",
+    "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
     "@babel/core": "^7.19.3",

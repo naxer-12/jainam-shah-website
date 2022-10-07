@@ -19,14 +19,11 @@ const nextConfig = {
   },
   // basePath: "/nextjs-pages",
   // assetPrefix: "/nextjs-pages",
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      "/": { page: "/" },
-    };
-  },
+  exportPathMap: () => ({
+    "/": {
+      page: "/",
+    },
+  }),
   // future: { webpack5: true },
 };
 module.exports = nextConfig;
