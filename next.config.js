@@ -17,6 +17,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: "/nextjs-pages",
+  assetPrefix: "/nextjs-pages",
   exportPathMap: async function (
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
