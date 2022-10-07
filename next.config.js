@@ -10,9 +10,20 @@
 // });
 const nextConfig = {
   reactStrictMode: true,
-  image: {
-    loader: "akamai",
-    path: "",
+  // image: {
+  //   loader: "akamai",
+  //   path: "https://noop/",
+  // },
+  images: {
+    unoptimized: true,
+  },
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      "/": { page: "/" },
+    };
   },
   // future: { webpack5: true },
 };
