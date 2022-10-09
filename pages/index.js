@@ -33,13 +33,13 @@ export default function Home() {
         <Flex flexDirection={["column", "row"]}>
           <WorkLink
             url="https://www.phyxable.com/"
-            image="/images/phyxable-icon.png"
+            image="https://res.cloudinary.com/dlfwnm1zp/image/upload/v1665334138/phyxable-icon_adkjep.png"
             name="Phyxable"
             dates="sept 2020 - dec 2020"
           />
           <WorkLink
             url="https://jarvistechnolabs.com/"
-            image="/images/jarvis-technolabs-icon.png"
+            image="https://res.cloudinary.com/dlfwnm1zp/image/upload/v1665334137/jarvis-technolabs-icon_b2d0es.png"
             name="Jarvis Technolabs"
             dates="2019-2021"
           />
