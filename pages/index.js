@@ -1,8 +1,9 @@
-import { Box, Text, Flex } from "rebass";
+import { Box, Text, Flex, Heading } from "rebass";
 import Image from "next/image";
 import Link from "../components/Link";
 import styled from "../styles/Home.module.css";
 import Layout from "../components/Layout";
+import Card from "../components/Card";
 
 export default function Home() {
   return (
@@ -20,9 +21,7 @@ export default function Home() {
       <Box mb={[5, 6]}>
         <Text fontWeight="bold">Hello, my name is Jainam.</Text>
         <Text mb={[3, 6]}>
-          I'm a Web and Mobile Developer. My stack includes flutter,react and
-          for backend i use nodejs and typescript.In my free time i explore
-          various designs and sites and reverse engineer them.
+          lorem ipsum dolor sit amet, consectetur adipiscing
         </Text>
       </Box>
 
@@ -35,39 +34,35 @@ export default function Home() {
             url="https://www.phyxable.com/"
             image="https://res.cloudinary.com/dlfwnm1zp/image/upload/v1665334138/phyxable-icon_adkjep.png"
             name="Phyxable"
-            dates="sept 2020 - dec 2020"
+            dates="2020 - 2021"
           />
           <WorkLink
             url="https://jarvistechnolabs.com/"
             image="https://res.cloudinary.com/dlfwnm1zp/image/upload/v1665334137/jarvis-technolabs-icon_b2d0es.png"
             name="Jarvis Technolabs"
-            dates="2019-2021"
+            dates="2019 - 2020"
           />
         </Flex>
       </Flex>
-      {/* 
-      <Text mb={[2, 4]} mt={5} fontWeight="bold">
-        Featured Writing
+      <Text mb={[2, 4]} mt={[5]} fontWeight="bold">
+        Projects
       </Text>
-      <Box>
-        <Link underline display="block" href="/writing/designing-in-swiftui">
-          Designing in SwiftUI
-        </Link>
 
-        <Link underline display="block" href="https://react.design/terminal">
-          A Designer's Guide to the Terminal
-        </Link>
+      <Card />
 
-        <Link underline display="block" href="/writing/react-is-for-designers">
-          React is for Designers
-        </Link>
-
-        <Link underline display="block" href="/writing/on-writing-css">
-          On Writing CSS
-        </Link>
-        <Link underline display="block" href="/writing/my-first-online-course">
-          My First Online Course
-        </Link>
+      {/* <Box
+        sx={{
+          display: "grid",
+          gridGap: 4,
+          gridTemplateColumns: "repeat(auto-fit, minmax(128px, 1fr))",
+        }}
+      >
+        <Heading p={3} bg="muted">
+          Hello
+        </Heading>
+        <Box p={3} color="background" bg="primary">
+          CSS Grid
+        </Box>
       </Box> */}
     </Layout>
   );

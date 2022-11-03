@@ -8,6 +8,7 @@ const Link = ({
   className,
   underline = false,
   onClick,
+  target="",
   ...rest
 }) => {
   const external = href.startsWith("http");
@@ -18,6 +19,7 @@ const Link = ({
           className={`${className} ${styles.link}`}
           style={underline ? { textDecoration: "underline" } : {}}
           href={href}
+          target={target}
           onClick={onClick}
           {...rest}
         >

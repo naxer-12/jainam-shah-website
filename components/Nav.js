@@ -13,10 +13,10 @@ export default function Nav() {
       <Spotlight className={styles.logo}>⌘</Spotlight>
       <Box flexGrow={1}></Box>
       <Link
-        href="/"
-        className={asPath === "/" ? (styles.link, styles.active) : styles.link}
+        href="https://drive.google.com/file/d/1M7cE2roszn2_xIu5xSCGWcMjxKLCEgTq/view?usp=sharing"
+        target="_blank"
       >
-        Work
+        Resume
       </Link>
 
       {/* <Link

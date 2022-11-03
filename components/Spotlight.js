@@ -69,7 +69,7 @@ const data = [
     source: socials,
   },
   {
-    name: "Projects",
+    name: "Company Projects",
     source: projects,
   },
   {
