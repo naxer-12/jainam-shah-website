@@ -38,7 +38,24 @@ let projects = [
     extUrl: "https://bit.ly/3aqq41B",
   },
 ];
-
+let personal_projects = [
+  {
+    title: "Daily News App(Github)",
+    extUrl: "https://github.com/naxer-12/daily-news",
+  },
+  {
+    title: "Food Grid App(Github)",
+    extUrl: "https://github.com/naxer-12/FoodGrid",
+  },
+  {
+    title: "Parking App(Github)",
+    extUrl: "https://github.com/naxer-12/Parking-app",
+  },
+  {
+    title: "NHL hockey App(Github)",
+    extUrl: "https://github.com/naxer-12/nhl-hockey-app",
+  },
+];
 let nav = [
   {
     title: "Work",
@@ -63,19 +80,23 @@ let resume = [
 
 const data = [
   // { name: "Writing", source: posts },
-  { name: "Navigation", source: nav },
-  {
-    name: "Social",
-    source: socials,
-  },
+  // { name: "Navigation", source: nav },
+  // {
+  //   name: "Social",
+  //   source: socials,
+  // },
   {
     name: "Projects",
     source: projects,
   },
   {
-    name: "Resume",
-    source: resume,
+    name: "Personal Projects",
+    source: personal_projects,
   },
+  // {
+  //   name: "Resume",
+  //   source: resume,
+  // },
 ];
 
 function Spotlight(props) {

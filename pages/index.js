@@ -18,12 +18,13 @@ export default function Home() {
         }
       `}</style>
       <Box mb={[5, 6]}>
-        <Text fontWeight="bold">Hello, my name is Jainam.</Text>
-        <Text mb={[3, 6]}>
+        <Text fontWeight="bold">Hello, my name is Jainam Shah.</Text>
+        <Text mb={[2, 4]}>
           I'm a Web and Mobile Developer. My stack includes flutter,react and
-          for backend i use nodejs and typescript.In my free time i explore
-          various designs and sites and reverse engineer them.
+          for backend i use nodejs and typescript. I am currently learning more
+          about react ecosystem.
         </Text>
+        <Text fontStyle="italic">Press ⌘ to get more info.</Text>
       </Box>
 
       <Text mb={[2, 4]} mt={[5]} fontWeight="bold">
